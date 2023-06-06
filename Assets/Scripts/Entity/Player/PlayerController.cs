@@ -213,6 +213,54 @@ public class PlayerController : MonoBehaviourPun, IFreezableEntity, ICustomSeria
 
     #region Unity Methods
     public void Awake() {
+    //slowriseGravity = 0.85f
+    //normalGravity = 2.5f
+    //flyingGravity = 0.8f
+    //flyingTerminalVelocity = 1.25f
+    //drillVelocity = 7f
+    //groundpoundTime = 0.25f
+    //groundpoundVelocity = 10
+    //blinkingSpeed = 0.25f
+    //terminalVelocity = -7f
+    //jumpVelocity = 6.25f
+    //megaJumpVelocity = 16f
+    //launchVelocity = 12f
+    //wallslideSpeed = -4.25f
+    //giantStartTime = 1.5f
+    //soundRange = 10f
+    //slopeSlidingAngle = 12.5f
+    //pickupTime = 0.5f
+    //propellerLaunchVelocity = 6
+    //propellerFallSpeed = 2
+    //propellerSpinFallSpeed = 1.5f
+    //propellerSpinTime = 0.75f
+    //propellerDrillBuffer, heightSmallModel = 0.42f
+    //heightLargeModel = 0.82f
+
+    GameManager GameManager;
+		GameObject obj = GameObject.Find("GameManager");
+		GameManager = obj.GetComponent<GameManager>();
+		slowriseGravity = GameManager.slowriseGravity2;
+		normalGravity = GameManager.normalGravity2;
+		flyingGravity = GameManager.flyingGravity2;
+		drillVelocity = GameManager.drillVelocity2;
+        groundpoundTime = GameManager.groundpoundTime2;
+        groundpoundVelocity = GameManager.groundpoundVelocity2;
+        terminalVelocity = GameManager.terminalVelocity2;
+        jumpVelocity = GameManager.jumpVelocity2;
+        launchVelocity = GameManager.launchVelocity2;
+        wallslideSpeed = GameManager.wallslideSpeed2;
+        giantStartTime = GameManager.giantStartTime2;
+        soundRange = GameManager.soundRange2;
+        slopeSlidingAngle = GameManager.slopeSlidingAngle2;
+        pickupTime = GameManager.pickupTime2;
+        propellerLaunchVelocity = GameManager.propellerLaunchVelocity2;
+        propellerFallSpeed = GameManager.propellerFallSpeed2;
+        propellerSpinFallSpeed = GameManager.propellerSpinFallSpeed2;
+        propellerSpinTime = GameManager.propellerSpinTime2;
+        propellerDrillBuffer = GameManager.propellerDrillBuffer2;
+        heightSmallModel = GameManager.heightSmallModel2;
+        heightLargeModel = GameManager.heightLargeModel2;
         cameraController = GetComponent<CameraController>();
         cameraController.IsControllingCamera = photonView.IsMineOrLocal();
 

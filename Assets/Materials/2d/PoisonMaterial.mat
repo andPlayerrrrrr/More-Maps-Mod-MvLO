@@ -38,7 +38,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - Heightmap:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 8c3c80a47e6af9a4a8307f03a98a86ed, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _SampleTexture2DLOD_14fea36738ec45e9afaddff6a22b8796_Texture_1:
@@ -67,10 +67,10 @@ Material:
     - Points: 256
     - PointsPerTile: 4
     - TextureIndex: 7
-    - WaveHeight: 0.3
-    - WaveSpeed: 1.2
+    - WaveHeight: 0.5
+    - WaveSpeed: 1
     - WaveWidth: 1
-    - WidthTiles: 64
+    - WidthTiles: 127.97
     - _BUILTIN_QueueControl: -1
     - _BUILTIN_QueueOffset: 0
     - _Points: 160

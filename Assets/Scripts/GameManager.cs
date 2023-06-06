@@ -37,6 +37,10 @@ public class GameManager : MonoBehaviour, IOnEventCallback, IInRoomCallbacks, IC
     public float cameraMinY, cameraHeightY, cameraMinX = -1000, cameraMaxX = 1000;
     public bool loopingLevel = true;
     public Vector3 spawnpoint;
+
+    public float slowriseGravity2 = 0.85f, normalGravity2 = 2.5f, flyingGravity2 = 0.8f, flyingTerminalVelocity2 = 1.25f, drillVelocity2 = 7f, groundpoundTime2 = 0.25f, groundpoundVelocity2 = 10, blinkingSpeed2 = 0.25f, terminalVelocity2 = -7f, jumpVelocity2 = 6.25f, launchVelocity2 = 12f, wallslideSpeed2 = -4.25f, giantStartTime2 = 1.5f, soundRange2 = 10f, slopeSlidingAngle2 = 12.5f, pickupTime2 = 0.5f;
+    public float propellerLaunchVelocity2 = 6, propellerFallSpeed2 = 2, propellerSpinFallSpeed2 = 1.5f, propellerSpinTime2 = 0.75f, propellerDrillBuffer2, heightSmallModel2 = 0.42f, heightLargeModel2 = 0.82f;
+
     public Tilemap tilemap;
     [ColorUsage(false)] public Color levelUIColor = new(24, 178, 170);
     public bool spawnBigPowerups = true, spawnVerticalPowerups = true;

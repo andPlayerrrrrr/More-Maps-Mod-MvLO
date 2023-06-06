@@ -20,9 +20,6 @@ MonoBehaviour:
   - m_Id: 0
     m_Sprites:
     - {fileID: 5046127751588644594, guid: becfea25a929a1545b276e03be04cacc, type: 3}
-    - {fileID: -9092035814142509112, guid: becfea25a929a1545b276e03be04cacc, type: 3}
-    - {fileID: -3843259335920623202, guid: becfea25a929a1545b276e03be04cacc, type: 3}
-    - {fileID: -6995818904012696921, guid: becfea25a929a1545b276e03be04cacc, type: 3}
     m_GameObject: {fileID: 0}
     m_MinAnimationSpeed: 1
     m_MaxAnimationSpeed: 1
@@ -238,4 +235,3 @@ MonoBehaviour:
   isBackgroundTile: 0
   iceSkidding: 0
   footstepSound: 31
-  frictionFactor: 1
